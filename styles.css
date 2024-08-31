@@ -1,0 +1,265 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#header {
+    height: 70px;
+    width: 100%;
+    background-color: #FFE9D1;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    
+    
+    
+}
+
+/* logo */
+#header-img {
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+/* nav bar */
+#nav-bar {
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+    
+    
+}
+.nav-link {
+    color: #006497;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 10px;
+    border: solid black 1px;
+    border-radius: 1rem;
+    border: hidden;
+}
+.nav-link:hover {
+    text-decoration: none;
+    color:white;
+    background-color: black;
+
+    border: solid black 1px;
+    border-radius: 1rem;
+    
+}
+
+/* hero section */
+.hero {
+    
+    width: 100%;
+    height: 570px;
+    background-image: url("https://cdn.pixabay.com/photo/2015/05/04/10/16/vegetables-752153_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sp-one {
+    font-size: 2.3rem;
+    font-family:sans-serif;
+    color: rgb(9, 9, 9);
+    font-weight: 700;
+    align-self: center;
+    margin-top: 120px;
+}
+.sp-two {
+    font-size: 1.9rem;
+    font-family:sans-serif;
+    color: rgba(15, 13, 13, 0.718);
+    font-weight: 700;
+    justify-content: center;
+    align-self: center;
+}
+.sp-three {
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    background-color: white;
+    color: black ;
+    align-self: center;
+    font-size: 1.4rem;
+    align-content: center;
+    padding-left: 17px;
+    margin-top: 30px;
+    border: black solid 0.8px;
+    border-radius: 1.5rem;
+}
+.sp-three:hover {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+/* About Section */
+#about {
+    height: 400px;
+    background-color:  #F5F5F5;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.ab-one {
+    margin-top: 30px;
+    width: 550px;
+    height: 350px;
+    background-image: url("https://cdn.pixabay.com/photo/2021/10/11/11/12/countryside-6700296_640.jpg");
+    background-position: center;
+    background-size: cover;
+    border: white solid 1px;
+    border-radius: 0.5rem;
+    margin-left: 50px;
+
+}
+.ab-two {
+    margin-top: 30px;
+    width: 650px;
+    height: 350px;
+    border: white solid 1px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.ab-two > h1 {
+    justify-content: center;
+    align-self: center;
+    color: #FC6F2F;
+    font-size: 2rem;
+    margin-top: 20px;
+
+}
+
+.ab-two > p {
+    font-size: 1.2rem;
+    align-self: center;
+    margin: 20px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Products */
+#product {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    
+}
+
+.box {
+    background-color: #F5F5F5 ;
+    height: 430px;
+    
+    width: 400px;
+    margin: 10px 20px;
+    box-shadow: #FFE9D1 4px 4px;
+    border-radius: 1rem;
+
+
+   
+}
+
+.box-one {
+    width: full;
+    height: 360px;
+    background-image: url("https://cdn.pixabay.com/photo/2021/09/16/15/26/fruit-6630377_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    
+}
+.product-name{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+/* Video Section */
+#video {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+/* contact */
+#contact {
+    width: 100%;
+    height: 300px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+#contact > h1 {
+    font-size: 1.6rem;
+    align-self: center;
+    color: #FC6F2F;
+    margin-top: 60px;
+}
+#form {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#email {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#submit {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #555;
+}
+
+
+/* Responsive Design using Media Query */
+@media (max-width: 768px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
